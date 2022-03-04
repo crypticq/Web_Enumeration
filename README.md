@@ -39,3 +39,8 @@ Enumrate websites in a host
 	wapiti -u $ip -o wapiti_result -f html -m all
 
 	
+# Do they have a WAF ?
+	nmap -p 80,443 --script http-waf*
+	wafw00f $ip
+# DO They load balance?
+	lbd $ip
