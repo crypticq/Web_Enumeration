@@ -23,6 +23,5 @@ first run this command <br />
 
 
 # Now do;
-	john --stdout --wordlist=oo --rules:AppendYears,Append4Num,AppendSpecial3num,AppendMonthCurrentYear,Add1234_Everywhere > OwnMe.txt
-
+	john --stdout --wordlist=oo --rules:AppendYears,AppendCurrentYearSpecial,AppendSeason,Append4NumSpecial,Append3NumSpecial,Append2NumSpecial > Ownme.txt
 	
