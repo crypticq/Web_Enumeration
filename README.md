@@ -23,6 +23,6 @@ first run this command <br />
 
 
 # Now do;
-	for ruleset in `grep KoreLogicRules /etc/john/john.conf | cut -d: -f 2 | cut -d\] -f 1 | grep Year | grep -v Special`; do john --stdout --wordlist=$idc_just_johnme  --rules=${ruleset} ; done > o2 && cat o2 | cut -d , -f 1 > final_pass.txt
+	john --stdout --wordlist=oo --rules:AppendYears,Append4Num,AppendSpecial3num,AppendMonthCurrentYear,Add1234_Everywhere > OwnMe.txt
 
 	
