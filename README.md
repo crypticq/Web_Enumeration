@@ -18,7 +18,6 @@ Enumrate websites in a host
  	cewl -w $file -c -m 5 http://$target && cat $file | cut -d , -f 1 > idc_just_johnme
  
 # Generate dic passowrd using john . 
-first run this command <br />
 	wget https://openwall.info/wiki/_media/john/korelogic-rules-20100801.txt && cat korelogic-rules-20100801.txt >> /etc/john/john.conf
 
 
@@ -36,7 +35,7 @@ first run this command <br />
 
 # Finding vulnerability with wapiti
 
-	apt install wapiti </br>
+	apt install wapiti 
 	wapiti -u $ip -o wapiti_result -f html -m all
 
 	
