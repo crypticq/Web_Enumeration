@@ -28,3 +28,15 @@ first run this command <br />
 # ssl scan a host .
 
 	sslscan $ip
+#POODLE vulnerability detection .. 
+
+	nmap --script ssl-poodle -sV -p 443 $ip
+# Nikto a host .
+	nikto -h $ip -o result.html
+
+# Finding vulnerability with wapiti
+
+	apt install wapiti </br>
+	wapiti -u $ip -o wapiti_result -f html -m all
+
+	
