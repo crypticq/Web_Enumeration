@@ -23,5 +23,8 @@ first run this command <br />
 
 
 # Now do;
-	john --stdout --wordlist=oo --rules:AppendYears,AppendCurrentYearSpecial,AppendSeason,Append4NumSpecial,Append3NumSpecial,Append2NumSpecial > Ownme.txt
+	john --stdout --wordlist=idc_just_johnme --rules:AppendYears,AppendCurrentYearSpecial,AppendSeason,Append4NumSpecial,Append3NumSpecial,Append2NumSpecial > Ownme.txt
 	
+# ssl scan a host .
+
+	sslscan $ip
